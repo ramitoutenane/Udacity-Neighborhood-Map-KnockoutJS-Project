@@ -1,0 +1,108 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: courier, Helvetica, sans-serif;
+    background-color: #1c569f;
+    color: white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    list-style: none;
+}
+
+
+.container {
+    height: 100%;
+}
+
+.side {
+    display: block;
+    max-width: 90%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.map-canvas {
+    height: 85%;
+    margin-top: 25px;
+}
+
+.toggle-box {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    left: 0;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.list {
+    display: block;
+    position: absolute;
+    max-width: 90%;
+    min-height: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 30px 0 0px 25px;
+    border: 2px solid black;
+    overflow: auto;
+    background: #113a73;
+    text-align: center;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.list-control {
+    border-bottom: 1px dashed white;
+    width: 100%;
+}
+
+.list-title {
+    padding: 0 10px;
+}
+
+.filter-box {
+    margin: 5px 0 5px 5px;
+    max-width: 75%;
+    font-size: 1.1em;
+    color: #113a73;
+}
+
+.list-item {
+    border-bottom: 1px dashed white;
+}
+
+.info {
+    color: black;
+}
+
+.wikiLink {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.list-item:hover {
+    background-color: darkgrey;
+}
+
+.side input:checked ~ ul {
+    transform: none;
+}
+
+.side input:checked ~ .hamburger {
+    left: 90%;
+}

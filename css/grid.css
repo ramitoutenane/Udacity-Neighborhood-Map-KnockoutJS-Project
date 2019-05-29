@@ -1,0 +1,37 @@
+html,
+body {
+    background-color: #113a73;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+}
+
+.map-canvas {
+    height: 100%;
+    margin: 0;
+}
+
+.side {
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.list {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transform: none;
+}
+
+.hamburger {
+    display: none;
+}
+
