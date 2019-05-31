@@ -4,7 +4,7 @@ const places = [
         coordinates: {lat: 31.986885, lng: 35.828058}
     },
     {
-        name: 'The Childrens Museum Jordan',
+        name: 'The Children\'s Museum Jordan',
         coordinates: {lat: 31.984689, lng: 35.825493}
     },
     {
