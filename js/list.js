@@ -26,10 +26,10 @@ const ViewModel = function () {
         } else {
             return ko.utils.arrayFilter(self.allPlacesList(), function (place) {
                 if (place.name.toLowerCase().indexOf(filter) != -1) {
-                    markers[place.id].setMap(map);
+                    markers[place.id].setVisible(true);
                     return true;
                 } else {
-                    markers[place.id].setMap(null);
+                    markers[place.id].setVisible(false);
                     return false;
                 }
             });

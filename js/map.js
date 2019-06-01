@@ -38,6 +38,6 @@ function mapErrorHandling() {
 
 function showAllMarkers() {
     markers.forEach(function (marker) {
-        marker.setMap(map);
+        marker.setVisible(true);
     });
 }
